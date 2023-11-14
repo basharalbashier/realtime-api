@@ -1,0 +1,11 @@
+services:
+  chatbackend:
+    build: .
+    container_name: home_chat_backend
+    ports:
+      - 5243:5243
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      PORT: 5243

@@ -1,0 +1,36 @@
+{
+  "name": "home_chat_example",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "type": "module",
+  "dependencies": {
+    "@socket.io/cluster-adapter": "^0.2.2",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "sqlite": "^5.0.1",
+    "sqlite3": "^5.1.6",
+    "@prisma/client": "^5.5.2",
+    "typescript": "^5.2.2"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && swc ./src -d dist",
+    "start": "node index.js",
+    "start:docker": "npm build && npm start"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.96",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "prisma": "^5.5.2",
+    "rimraf": "^5.0.5"
+  }
+}
